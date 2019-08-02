@@ -10,13 +10,13 @@ test: $(OBJS)
 	$(CC) -o $@ $^
 
 info:
-	@echo "SRCS-->"
+	@echo -n "SRCS-->"
 	@echo $(SRCS)
-	@echo "OBJS-->"
+	@echo -n "OBJS-->"
 	@echo $(OBJS)
-	@echo "OBJS1-->"
+	@echo -n "OBJS1-->"
 	@echo $(OBJS1)
-	@echo "OBJS2-->"
+	@echo -n "OBJS2-->"
 	@echo $(OBJS2)
 clean:
 	rm $(OBJS) test
