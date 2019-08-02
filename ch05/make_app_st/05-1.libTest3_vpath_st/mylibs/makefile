@@ -6,7 +6,7 @@
 
 CC = gcc
 
-VPATH = ../libSrc 
+VPATH = ./libSrc 
 LIB_SRCS = max.c min.c
 LIB_OBJS = $(LIB_SRCS:.c=.o)
 ARFLAGS = -rcs

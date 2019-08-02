@@ -17,7 +17,7 @@ APP_OUT = app_static app_shared
 all : testlibs $(APP_OUT)
 
 testlibs : $(LIB_PATH)/makefile
-	cd $(LIB_PATH); make .........
+	cd $(LIB_PATH); make VPATH=../libSrc 
 
 app_static : appSrc/$(APP).o
 	@echo "app create using static library...."
