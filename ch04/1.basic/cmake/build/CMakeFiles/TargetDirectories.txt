@@ -1,0 +1,3 @@
+/home/linux/git/tocgic/lop/ch04/1.basic/cmake/build/CMakeFiles/rebuild_cache.dir
+/home/linux/git/tocgic/lop/ch04/1.basic/cmake/build/CMakeFiles/mytest.dir
+/home/linux/git/tocgic/lop/ch04/1.basic/cmake/build/CMakeFiles/edit_cache.dir

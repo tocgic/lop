@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/linux/git/tocgic/lop/ch04/1.basic/cmake/a.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/linux/git/tocgic/lop/ch04/1.basic/cmake/b.h
+
+/home/linux/git/tocgic/lop/ch04/1.basic/cmake/c.h
+
+/home/linux/git/tocgic/lop/ch04/1.basic/cmake/test1.c
+a.h
+/home/linux/git/tocgic/lop/ch04/1.basic/cmake/a.h
+b.h
+/home/linux/git/tocgic/lop/ch04/1.basic/cmake/b.h
+
+/home/linux/git/tocgic/lop/ch04/1.basic/cmake/test2.c
+a.h
+/home/linux/git/tocgic/lop/ch04/1.basic/cmake/a.h
+c.h
+/home/linux/git/tocgic/lop/ch04/1.basic/cmake/c.h
+
+/home/linux/git/tocgic/lop/ch04/1.basic/cmake/test3.c
+a.h
+/home/linux/git/tocgic/lop/ch04/1.basic/cmake/a.h
+b.h
+/home/linux/git/tocgic/lop/ch04/1.basic/cmake/b.h
+c.h
+/home/linux/git/tocgic/lop/ch04/1.basic/cmake/c.h
+
