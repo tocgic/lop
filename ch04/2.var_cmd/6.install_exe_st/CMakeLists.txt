@@ -11,6 +11,7 @@ set ( CMAKE_VERBOSE_MAKEFILE TRUE )
 
 
 install ( TARGETS mytest
-	DESTINATION bin #/usr/local
+	#DESTINATION bin #/usr/local/bin
+	DESTINATION kim #/usr/local/kim
 	)
 
