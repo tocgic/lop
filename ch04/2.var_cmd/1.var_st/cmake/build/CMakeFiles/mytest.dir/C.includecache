@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/linux/git/tocgic/lop/ch04/2.var_cmd/1.var_st/cmake/a.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+
+/home/linux/git/tocgic/lop/ch04/2.var_cmd/1.var_st/cmake/b.h
+
+/home/linux/git/tocgic/lop/ch04/2.var_cmd/1.var_st/cmake/c.h
+
+/home/linux/git/tocgic/lop/ch04/2.var_cmd/1.var_st/cmake/test1.c
+a.h
+/home/linux/git/tocgic/lop/ch04/2.var_cmd/1.var_st/cmake/a.h
+b.h
+/home/linux/git/tocgic/lop/ch04/2.var_cmd/1.var_st/cmake/b.h
+
+/home/linux/git/tocgic/lop/ch04/2.var_cmd/1.var_st/cmake/test2.c
+a.h
+/home/linux/git/tocgic/lop/ch04/2.var_cmd/1.var_st/cmake/a.h
+c.h
+/home/linux/git/tocgic/lop/ch04/2.var_cmd/1.var_st/cmake/c.h
+
+/home/linux/git/tocgic/lop/ch04/2.var_cmd/1.var_st/cmake/test3.c
+a.h
+/home/linux/git/tocgic/lop/ch04/2.var_cmd/1.var_st/cmake/a.h
+b.h
+/home/linux/git/tocgic/lop/ch04/2.var_cmd/1.var_st/cmake/b.h
+c.h
+/home/linux/git/tocgic/lop/ch04/2.var_cmd/1.var_st/cmake/c.h
+

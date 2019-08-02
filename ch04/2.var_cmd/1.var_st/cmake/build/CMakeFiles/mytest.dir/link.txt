@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/mytest.dir/test1.c.o CMakeFiles/mytest.dir/test2.c.o CMakeFiles/mytest.dir/test3.c.o  -o mytest 
