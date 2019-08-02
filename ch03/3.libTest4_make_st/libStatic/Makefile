@@ -10,14 +10,16 @@ CC = $(PLATFORM)gcc
 CFLAGS = -Wall -O2
 ARFLAGS = -rcs
 
-LIB_SRCS = max.c min.c sum.c
+SRC_PATH = ../libSrc
+LIB_SRCS = $(SRC_PATH)/max.c $(SRC_PATH)/min.c
 LIB_OBJS = $(LIB_SRCS:.c=.o)
+LIB_OUT = libtest.a
 
-libtest.a : $(LIB_OBJS)
+$(LIB_OUT) : $(LIB_OBJS)
 	$(AR) $(ARFLAGS) $@ $^
 
 clean :
 	-rm -f $(LIB_OBJS)
-	-rm -f libtest.a
+	-rm -f $(LIB_OUT)
 
 

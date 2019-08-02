@@ -19,16 +19,16 @@ all : $(APP_ALL)
 
 app_static : $(APP).o
 	@echo "app create using static library...."
-	_____________
+	make -C $(LIB_PATH_STATIC)
 	$(CC) -o $@ $(APP).o -L $(LIB_PATH_STATIC) -ltest
 
 app_shared : $(APP).o
 	@echo "app create using shared library...."
-	______________
+	make -C $(LIB_PATH_SHARED)
 	$(CC) -o $@ $(APP).o -L $(LIB_PATH_SHARED) -ltest
 
 clean :
-	_____________
-	_____________
+	make -C $(LIB_PATH_STATIC) clean
+	make -C $(LIB_PATH_SHARED) clean
 	-rm -f $(APP_ALL) $(APP).o
 	

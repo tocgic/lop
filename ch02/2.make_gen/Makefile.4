@@ -1,0 +1,23 @@
+OBJS = test1.o test2.o test3.o
+
+mytest : $(OBJS)
+	gcc -o mytest ${OBJS}
+# 	comment
+# 	...
+test1.o : test1.c a.h b.h
+	gcc -c test1.c
+
+test2.o : test2.c a.h c.h
+	gcc -c test2.c
+
+test3.o : test3.c a.h b.h c.h
+	gcc -c test3.c
+
+#phony target (dependency 없이 사용되는 target)
+clean :
+	-rm ${OBJS}
+#  '-' 오류가 발생해도 무시하고 다음 command 진행
+	-rm mytest
+
+dep:
+	gccmakedep test1.c test2.c test3.c

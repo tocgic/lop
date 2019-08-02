@@ -6,18 +6,20 @@
 
 PLATFORM = 
 
-INC_PATH = ________
+INC_PATH = ../include
 CC = $(PLATFORM)gcc
-CFLAGS = ________
-LIB_PATH_STATIC = _______
+CFLAGS = -I$(INC_PATH) -Wall -O2
+LIB_PATH_STATIC = ../libStatic
 
 app : app.o
 	@echo "app create using static library...."
-	___________
-	___________
+	make -C $(LIB_PATH_STATIC)
+	$(CC) -o $@ $^ -L$(LIB_PATH_STATIC) -ltest 
+
+
 
 clean :
-	___________
+	-make -C $(LIB_PATH_STATIC) clean
 	-rm -f app app.o
 
 

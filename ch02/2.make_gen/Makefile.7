@@ -1,0 +1,28 @@
+OBJS = test1.o test2.o test3.o
+# CC = cc
+# CC = arm-gcc
+CC = gcc
+
+# cc 명령 옵션
+CFLAGS = -g -Wall -O0
+
+# ld 명령 옵션
+LDFLAGS = -static -lpthread
+
+mytest : $(OBJS)
+# 	comment
+# 	...
+#	gcc -o $@ $^
+	$(CC) ${LDFLAGS} -o $@ ${OBJS}
+
+.c.o : 
+	$(CC) ${CFLAGS} -c $<
+
+#phony target (dependency 없이 사용되는 target)
+clean :
+	-rm ${OBJS}
+#  '-' 오류가 발생해도 무시하고 다음 command 진행
+	-rm mytest
+
+dep:
+	gccmakedep test1.c test2.c test3.c

@@ -5,7 +5,7 @@ int gv1 = 10, gv2;
 int main(void)  
 {
     int lv1, lv2, lv3=30;
-    const lv4;
+    const int lv4;
     short *p;
 
     printf("Main Start..\n");
