@@ -10,5 +10,7 @@ set ( CMAKE_BUILD_TYPE release )
 set ( CMAKE_VERBOSE_MAKEFILE TRUE )
 
 
-..............
+install ( TARGETS mytest
+	DESTINATION bin #/usr/local
+	)
 
