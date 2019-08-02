@@ -11,12 +11,15 @@ makefile :
 	@echo "Generate makefile..."
 	@rm -f $@
 	@cp Make.mk $@
-	.............
+	@$(CC) -M $(SRCS) >> $@
 
 clean:
 	rm $(OBJS) test
 
-......:
+#Configure 의해 생성된 내용 제거
+distclean: clobber
+mrproper: clobber
+clobber:
 	-rm $(OBJS) test
 	rm -f makefile
 
